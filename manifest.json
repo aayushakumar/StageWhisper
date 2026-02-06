@@ -1,0 +1,67 @@
+{
+    "manifest_version": 3,
+    "name": "StageWhisper",
+    "version": "0.1.0",
+    "description": "A world-class teleprompter with Notch Mode for near-camera reading during video calls and recordings.",
+    "icons": {
+        "16": "public/icons/icon16.png",
+        "32": "public/icons/icon32.png",
+        "48": "public/icons/icon48.png",
+        "128": "public/icons/icon128.png"
+    },
+    "action": {
+        "default_title": "StageWhisper",
+        "default_icon": {
+            "16": "public/icons/icon16.png",
+            "32": "public/icons/icon32.png"
+        }
+    },
+    "permissions": [
+        "storage",
+        "sidePanel",
+        "commands",
+        "contextMenus",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "src/background/sw.ts",
+        "type": "module"
+    },
+    "side_panel": {
+        "default_path": "src/sidepanel/index.html"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+S"
+            },
+            "description": "Open StageWhisper"
+        },
+        "toggle_play": {
+            "suggested_key": {
+                "default": "Alt+P"
+            },
+            "description": "Play/Pause teleprompter"
+        },
+        "toggle_hide": {
+            "suggested_key": {
+                "default": "Alt+H"
+            },
+            "description": "Panic hide/show"
+        },
+        "rewind": {
+            "suggested_key": {
+                "default": "Alt+Left"
+            },
+            "description": "Beat rewind (go back a few lines)"
+        }
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}

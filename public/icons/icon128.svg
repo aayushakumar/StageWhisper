@@ -1,0 +1,19 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="url(#gradient128)"/>
+  <!-- Teleprompter/screen icon -->
+  <rect x="24" y="32" width="80" height="52" rx="4" fill="white" fill-opacity="0.2"/>
+  <rect x="28" y="36" width="72" height="44" rx="2" fill="white" fill-opacity="0.1"/>
+  <!-- Text lines -->
+  <rect x="36" y="46" width="56" height="4" rx="2" fill="white"/>
+  <rect x="36" y="56" width="48" height="4" rx="2" fill="white" fill-opacity="0.7"/>
+  <rect x="36" y="66" width="52" height="4" rx="2" fill="white" fill-opacity="0.4"/>
+  <!-- Stand -->
+  <rect x="56" y="84" width="16" height="4" rx="2" fill="white" fill-opacity="0.3"/>
+  <rect x="48" y="88" width="32" height="4" rx="2" fill="white" fill-opacity="0.2"/>
+  <defs>
+    <linearGradient id="gradient128" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#007AFF"/>
+      <stop offset="1" stop-color="#5856D6"/>
+    </linearGradient>
+  </defs>
+</svg>
